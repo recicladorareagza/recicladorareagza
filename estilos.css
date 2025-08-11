@@ -1,0 +1,34 @@
+
+:root{ --primary:#1f3c88; --accent:#25d366; --bg:#f5f7fa; --text:#2b2b2b; --muted:#6b7280; --card:#ffffff; --shadow:0 10px 20px rgba(0,0,0,.08); }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
+a{color:var(--primary);text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+header.nav{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #e5e7eb;z-index:1000}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{width:44px;height:44px;object-fit:contain}
+.brand .title{font-weight:800;color:var(--primary);font-size:1.1rem;letter-spacing:.3px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{font-weight:600;color:#374151}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:white;padding:10px 14px;border-radius:12px;box-shadow:var(--shadow)}
+.hero{background:linear-gradient(135deg,#ecf3ff,#f8fffb);padding:40px 0;border-bottom:1px solid #e5e7eb}
+.hero h1{font-size:2.1rem;color:var(--primary);margin:0 0 8px}
+.hero p{color:#4b5563;max-width:900px}
+.grid{display:grid;gap:18px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:20px 0}
+.card{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 8px;color:var(--primary)}
+.section{padding:28px 0}
+.section h2{color:var(--primary);font-size:1.6rem;margin:0 0 10px}
+.badge{display:inline-block;background:#eaf2ff;color:var(--primary);padding:6px 10px;border-radius:999px;font-weight:700;font-size:.8rem}
+.list{line-height:1.6;color:#374151}
+.footer{background:#0e1f4b;color:#dbeafe;margin-top:32px}
+.footer a{color:#dbeafe}
+.footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:18px 0}
+small,.muted{color:#94a3b8}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:var(--accent);color:white;padding:14px 16px;border-radius:999px;box-shadow:var(--shadow);font-weight:800;z-index:1001}
+.hero-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:14px}
+.kicker{font-weight:800;color:#1f2937;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}
+@media (max-width:720px){ .nav-links{display:none} }
