@@ -60,7 +60,7 @@
         </ul>
       </div>
       <div class="hero-art">
-        <!-- Reemplaza por tu imagen principal -->
+        <!-- Reemplaza por tu imagen -->
         <img src="imagenes/hero.png" alt="Reciclaje de electrónicos y metales">
       </div>
     </div>
@@ -92,11 +92,11 @@
         <h3>Servicios</h3>
         <ol>
           <li><strong>Cobertura Nacional:</strong> Ofrecemos servicio de recolección en toda la República Mexicana, llegando hasta donde nos necesites.</li>
-          <li><strong>Recolección a Domicilio:</strong> Nos encargamos de la logística. Recogemos tus materiales directamente en tu ubicación, sin demoras.</li>
-          <li><strong>Pago Inmediato:</strong> Valoramos tu tiempo. Realizamos el pago al momento de la recolección, en efectivo o mediante transferencia.</li>
-          <li><strong>Atención Personalizada:</strong> Nuestro equipo te brinda asesoría profesional y directa, adaptándose a tus necesidades específicas.</li>
-          <li><strong>Compramos Cualquier Cantidad:</strong> Desde una unidad hasta lotes completos, sin importar el volumen o la condición del producto.</li>
-          <li><strong>Participación en Licitaciones:</strong> Experiencia y capacidad para participar en licitaciones y subastas de materiales a gran escala.</li>
+          <li><strong>Recolección a Domicilio:</strong> Recogemos tus materiales directamente en tu ubicación, sin demoras.</li>
+          <li><strong>Pago Inmediato:</strong> Al momento de la recolección, en efectivo o transferencia.</li>
+          <li><strong>Atención Personalizada:</strong> Asesoría profesional y directa, adaptada a tus necesidades.</li>
+          <li><strong>Compramos Cualquier Cantidad:</strong> Desde una unidad hasta lotes completos.</li>
+          <li><strong>Participación en Licitaciones:</strong> Experiencia en licitaciones y subastas a gran escala.</li>
         </ol>
       </div>
     </div>
@@ -174,7 +174,7 @@
       <!-- <img class="ilustra" src="imagenes/baterias.jpg" alt="Baterías"> -->
       <ul class="list">
         <li>Auto y moto</li><li>Montacargas</li><li>Industriales (plomo-ácido, AGM, gel)</li>
-        <li>De celulares y equipos electrónicos</li>
+        <li>De celulares y electrónicos</li>
         <li><strong>Recolección a domicilio:</strong> Sí. <strong>Compramos:</strong> Lotes o por unidad.</li>
       </ul>
 
@@ -246,7 +246,6 @@
   <a class="wa-float" href="https://wa.me/525559955896" target="_blank" aria-label="WhatsApp">💬</a>
 
   <script>
-    // Menú responsive (móvil)
     document.addEventListener("DOMContentLoaded", () => {
       const burger = document.getElementById("burger");
       const links  = document.getElementById("navLinks");
@@ -256,7 +255,6 @@
           links.style.display = open ? "none" : "flex";
           burger.setAttribute("aria-expanded", String(!open));
         });
-        // Cerrar al elegir sección (móvil)
         links.querySelectorAll("a[href^='#']").forEach(a => {
           a.addEventListener("click", () => {
             if (window.innerWidth <= 640) {
