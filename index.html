@@ -1,194 +1,309 @@
-[3:02 p.m., 19/8/2025] Ra: <!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es-MX">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recicladora Reagza | Reciclaje de electrónicos, metales y maquinaria</title>
-  <meta name="description" content="Reciclaje responsable con pago inmediato. Recolección a domicilio y gestión segura de residuos electrónicos, metales, equipo médico y maquinaria. Cobertura: ¡Toda la República Mexicana!">
-  <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Recicladora Reagza">
-  <meta property="og:description" content="Reciclaje responsable con pago inmediato · Cobertura nacional">
-  <link rel="icon" href="imagenes/logo.png">
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recicladora Reagza | Reciclaje responsable con pago inmediato</title>
+  <meta name="description" content="Recolección a domicilio y compra de residuos electrónicos, metales, equipo médico, maquinaria, mobiliario y chatarra. Pago inmediato. Cobertura nacional en México." />
+  <meta name="theme-color" content="#003366" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+  <!-- SEO estructurado -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
     "name":"Recicladora Reagza",
-    "telephone":"+525559955896",
-    "email":"recicladorareagza@hotmail.com",
+    "url":"https://recicladorareagza.github.io/recicladorareagza/",
+    "image":"assets/img/logo.png",
+    "telephone":["+52-55-5995-5896","+52-56-1789-7390"],
+    "email":["recicladorareagza@hotmail.com","comprarecicladoraplata@gmail.com"],
     "address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},
     "areaServed":"MX",
-    "sameAs":["https://wa.me/525559955896"]
+    "description":"Recolección y compra de residuos electrónicos, metales, chatarra, maquinaria y equipo médico con pago inmediato. Cobertura nacional.",
+    "sameAs":["https://wa.me/525617897390"]
   }
   </script>
 </head>
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
-
   <!-- NAV -->
   <header class="nav">
-    <div class="container nav-inner">
+    <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="Inicio">
-        <img src="imagenes/logo.png" alt="Logo Recicladora Reagza" class="logo">
-        <span class="title">Recicladora Reagza</span>
+        <img src="assets/img/logo.png" alt="Logo Recicladora Reagza" />
+        <span>Recicladora <strong>Reagza</strong></span>
       </a>
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav class="nav-links" id="navLinks" aria-label="Menú principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#materiales">Materiales</a>
-        <a href="#cobertura">Cobertura</a>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#contacto">Contacto</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav aria-label="Principal">
+        <ul id="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienes">Quiénes somos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#materiales">Materiales</a></li>
+          <li><a href="#cobertura">Cobertura</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main id="contenido">
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Reciclaje responsable con <span class="accent">pago inmediato</span></h1>
-          <p>Recolección a domicilio y gestión segura de <strong>residuos electrónicos, metales, equipo médico y maquinaria</strong>.</p>
-          <p class="coverage">Cobertura: <strong>¡Toda la República Mexicana!</strong></p>
-          <div class="cta">
-            <a href="#contacto" class="btn primary">Solicitar recolección</a>
-            <a href="https://wa.me/525559955896" class="btn alt" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="tel:+525559955896" class="btn ghost">Llamar ahora</a>
-          </div>
-          <ul class="bullets">
-            <li>📍 Servicio nacional</li>
-            <li>💳 Pago inmediato</li>
-            <li>📝 Constancia de disposición (si aplica)</li>
-          </ul>
-        </div>
-        <div class="hero-art">
-          <!-- Reemplaza por tu imagen principal -->
-          <img src="imagenes/hero.jpg" alt="Reciclaje de electrónicos y metales">
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <img class="hero-logo" src="assets/img/logo.png" alt="Logo grande Reagza" />
+        <h1>Tu aliado en reciclaje responsable</h1>
+        <p>Recolección a domicilio y gestión segura de residuos electrónicos, metales, equipo médico y maquinaria.</p>
+        <p class="sub">Cobertura: <strong>¡Toda la República Mexicana!</strong></p>
+        <div class="actions">
+          <a class="btn primary" href="#contacto">Solicitar recolección</a>
+          <a class="btn accent" href="https://wa.me/525617897390?text=Hola%20Reagza%2C%20quiero%20cotizar%20recolecci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn ghost" href="tel:+525559955896">Llamar ahora</a>
         </div>
       </div>
-    </section>
+      <div class="hero-art">
+        <img src="assets/img/hero.jpg" alt="Portada: reciclaje responsable" />
+      </div>
+    </div>
+  </section>
 
-    <!-- QUIÉNES SOMOS -->
-    <section id="quienes-somos" class="section alt">
-      <div class="container">
-        <h2>Recicladora Reagza: Tu Aliado en Reciclaje Responsable</h2>
-        <p>En Recicladora Reagza, transformamos tus desechos en valor. Ofrecemos soluciones integrales de reciclaje para empresas y particulares, garantizando un proceso eficiente, transparente y comprometido con el medio ambiente.</p>
-        <h3>¿Quiénes Somos?</h3>
-        <p>Recicladora Reagza es una empresa mexicana con más de 12 años de trayectoria, líder en la compra y reciclaje responsable de una amplia gama de materiales. Nos especializamos en equipos electrónicos, maquinaria industri…
-[3:02 p.m., 19/8/2025] Ra: :root{
-  --primary:#0f2741; /* navy sobrio */
-  --accent:#1bb59a;  /* verde teal */
-  --bg:#f7f8fb;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --card:#fff;
-  --shadow:0 12px 30px rgba(16,24,40,.08);
-  --header-h:78px; /* header alto para logo grande en PC */
-}
+  <!-- QUIÉNES SOMOS -->
+  <section id="quienes" class="section">
+    <div class="container narrow">
+      <h2>Recicladora Reagza: Tu Aliado en Reciclaje Responsable</h2>
+      <p>En Recicladora Reagza, transformamos tus desechos en valor. Ofrecemos soluciones integrales de reciclaje para empresas y particulares, garantizando un proceso eficiente, transparente y comprometido con el medio ambiente.</p>
+      <p><strong>¿Quiénes Somos?</strong> Recicladora Reagza es una empresa mexicana con más de 12 años de trayectoria, líder en la compra y reciclaje responsable de una amplia gama de materiales. Nos especializamos en equipos electrónicos, maquinaria industrial, equipo médico, chatarra y electrodomésticos, ofreciendo un servicio de la más alta calidad en todo el país.</p>
+      <p>Nos destacamos por nuestra recolección a domicilio sin demoras, el pago inmediato (en efectivo o transferencia) y una atención al cliente que es sinónimo de confianza, profesionalismo y cercanía. Atendemos tanto a grandes empresas como a particulares, comprando desde unidades individuales hasta lotes completos, y participamos activamente en licitaciones y subastas.</p>
+    </div>
+  </section>
 
-/* Base */
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
-html{scroll-behavior:smooth}
-a{color:var(--primary);text-decoration:none}
-img{max-width:100%;height:auto;display:block}
-.container{max-width:1200px;margin:0 auto;padding:0 16px}
-.center{text-align:center}
-.muted{color:var(--muted)}
-.skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-.skip:focus{position:fixed;left:12px;top:12px;z-index:999;background:#fff;border:2px solid var(--primary);padding:8px 10px;border-radius:10px}
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section alt">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="grid cols-3">
+        <article class="card"><h3>1. Cobertura Nacional</h3><p>Ofrecemos servicio de recolección en toda la República Mexicana, llegando hasta donde nos necesites.</p></article>
+        <article class="card"><h3>2. Recolección a Domicilio</h3><p>Nos encargamos de la logística. Recogemos tus materiales directamente en tu ubicación, sin demoras.</p></article>
+        <article class="card"><h3>3. Pago Inmediato</h3><p>Valoramos tu tiempo. Realizamos el pago al momento de la recolección, en efectivo o mediante transferencia.</p></article>
+        <article class="card"><h3>4. Atención Personalizada</h3><p>Nuestro equipo te brinda asesoría profesional y directa, adaptándose a tus necesidades específicas.</p></article>
+        <article class="card"><h3>5. Compramos Cualquier Cantidad</h3><p>Desde una unidad hasta lotes completos, sin importar el volumen o la condición del producto.</p></article>
+        <article class="card"><h3>6. Participación en Licitaciones</h3><p>Experiencia y capacidad para participar en licitaciones y subastas de materiales a gran escala.</p></article>
+      </div>
+    </div>
+  </section>
 
-/* NAV */
-header.nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(255,255,255,.96);
-  backdrop-filter:saturate(180%) blur(10px);
-  border-bottom:1px solid #e5e7eb;
-  height:var(--header-h);
-}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:var(--header-h)}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{height:64px;max-height:64px;width:auto;object-fit:contain} /* grande en PC */
-.title{font-size:18px;font-weight:800;color:var(--primary);white-space:nowrap}
-.nav-links{display:flex;gap:18px;align-items:center}
-.nav-links a{font-weight:600}
-.burger{display:none;background:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:10px}
+  <!-- MATERIALES -->
+  <section id="materiales" class="section">
+    <div class="container">
+      <h2>Materiales Reciclables</h2>
+      <p class="section-sub">Compramos, retiramos y damos trazabilidad segura. Sube tus fotos en cada categoría para cotización más rápida.</p>
 
-/* HERO */
-.hero{background:linear-gradient(180deg,#eef2ff 0%,#fff 100%);padding:48px 0 32px}
-.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
-.hero-copy h1{font-size:44px;line-height:1.1;margin:0 0 12px;color:#0b1728}
-.hero-copy .accent{color:var(--accent)}
-.hero-copy p{font-size:18px;color:#374151}
-.coverage{margin-top:8px}
-.cta{display:flex;gap:12px;margin:16px 0 10px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 18px;border-radius:14px;font-weight:700;border:2px solid transparent}
-.btn.primary{background:var(--primary);color:#fff}
-.btn.alt{background:var(--accent);color:#fff}
-.btn.ghost{background:transparent;color:var(--primary);border-color:#cfd6df}
-.hero-art img{width:100%;height:auto;max-height:420px;object-fit:cover;border-radius:14px}
+      <div class="acc">
+        <!-- Cómputo -->
+        <details open>
+          <summary>
+            <img src="assets/img/materiales/computo.jpg" alt="Equipo de cómputo" />
+            <span>Compra de Equipo de Cómputo Usado o Descompuesto</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="cols-2">
+              <li>Monitores y Pantallas Planas: Cualquier tipo y tamaño.</li>
+              <li>CPUs de Escritorio: Unidades completas y componentes internos.</li>
+              <li>Laptops, Tablets y PCs Completas: Sin importar su estado.</li>
+              <li>Celulares y Smartphones: Todas las marcas y modelos.</li>
+              <li>Nobreaks y Reguladores de Voltaje.</li>
+              <li>Racks y Gabinetes.</li>
+              <li>Cámaras IP y Sistemas DVR.</li>
+              <li>Servidores, Conmutadores y Equipo de Redes.</li>
+              <li>Equipo de Telefonía Fija y Móvil.</li>
+              <li>Impresoras de Inyección y Láser; consumibles.</li>
+              <li>Todo Tipo de Cables, Cargadores y Periféricos.</li>
+            </ul>
+          </div>
+        </details>
 
-/* SECCIONES */
-.section{padding:60px 0}
-.section.alt{background:#fff}
-h1,h2,h3{color:#0b1728}
-h2{font-size:30px;margin:0 0 22px;text-align:center}
-h3{font-size:20px;margin:12px 0}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
-.card h3{margin:0 0 6px}
-.services-detail{max-width:900px;margin:18px auto 0}
-.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-.chip{background:#e6f8f4;color:#065f46;padding:8px 12px;border-radius:999px;font-weight:600}
-.note{text-align:center;color:var(--muted);margin-top:10px}
-.list{margin:10px 0 18px 18px}
-.list li{margin:6px 0}
-.list.cols{columns:2;column-gap:24px}
+        <!-- Médico -->
+        <details>
+          <summary>
+            <img src="assets/img/materiales/medico.jpg" alt="Equipo médico y laboratorio" />
+            <span>Compra de Equipo Médico y de Laboratorio Usado o Descompuesto (Reciclaje Especializado)</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="cols-2">
+              <li>Camillas, Camas de Hospital y Sillas de Ruedas.</li>
+              <li>Bancos de Sangre y Vitrinas Refrigeradas Médicas.</li>
+              <li>Máquinas de Rayos X, Tomógrafos y Mastógrafos.</li>
+              <li>Equipos de Laboratorio: Centrífugas, microscopios, autoclaves, etc.</li>
+            </ul>
+          </div>
+        </details>
 
-/* CONTACTO */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
-.form{display:flex;flex-direction:column;gap:10px}
-.form input,.form textarea{padding:12px;border:1px solid #d1d5db;border-radius:14px;background:#fff}
-.form textarea{min-height:120px;resize:vertical}
-.form button{background:var(--primary);color:#fff;padding:12px;border:none;border-radius:14px;font-weight:700;cursor:pointer}
-.form button:hover{opacity:.95}
+        <!-- Maquinaria -->
+        <details>
+          <summary>
+            <img src="assets/img/materiales/maquinaria.jpg" alt="Maquinaria y motores" />
+            <span>Compra de Maquinaria (Bombas de Agua Usadas o Descompuestas y Motores Industriales)</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="cols-2">
+              <li>Bombas Centrífugas y Sumergibles.</li>
+              <li>Bombas Industriales para Líquidos o Gases.</li>
+              <li>Hidrolavadoras Karcher y otras marcas.</li>
+              <li>Motores Eléctricos Industriales.</li>
+              <li>Molinos, Compresoras y Extractores.</li>
+              <li>Maquinaria Industrial de Todo Tipo.</li>
+            </ul>
+          </div>
+        </details>
 
-/* FOOTER */
-.footer{background:var(--primary);color:#fff;text-align:center;padding:22px;margin-top:26px}
+        <!-- Oficina -->
+        <details>
+          <summary>
+            <img src="assets/img/materiales/oficina.jpg" alt="Mobiliario de oficina" />
+            <span>Mobiliario de Oficina Usado</span>
+          </summary>
+          <div class="acc-body">
+            <p>¡Lo desmantelamos, lo retiramos y te pagamos en efectivo! Atendemos CDMX, Estado de México y toda la República.</p>
+            <ul class="cols-2">
+              <li>Escritorios, Sillas, Sillones</li>
+              <li>Máquinas de Escribir (Eléctricas o Mecánicas)</li>
+              <li>Anaqueles, Estantes, Canceles</li>
+              <li>Pizarrones, Racks, Mesas de Juntas</li>
+              <li>Cubículos, Archiveros, Lockers</li>
+            </ul>
+          </div>
+        </details>
 
-/* WhatsApp flotante */
-.wa-float{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;padding:12px 14px;border-radius:999px;box-shadow:var(--shadow)}
+        <!-- Chatarra -->
+        <details>
+          <summary>
+            <img src="assets/img/materiales/chatarra.jpg" alt="Chatarra y metales" />
+            <span>Chatarra y Desechos Industriales</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="cols-2">
+              <li>Aluminio</li>
+              <li>Cobre</li>
+              <li>Bronce</li>
+              <li>Acero</li>
+              <li>Fierro y estructuras</li>
+            </ul>
+          </div>
+        </details>
 
-/* COMPENSAR HEADER EN ANCLAS */
-#inicio,#servicios,#materiales,#cobertura,#beneficios,#contacto{
-  scroll-margin-top:calc(var(--header-h) + 14px);
-}
+        <!-- Baterías -->
+        <details>
+          <summary>
+            <img src="assets/img/materiales/baterias.jpg" alt="Baterías usadas" />
+            <span>Baterías Usadas de Todo Tipo</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="cols-2">
+              <li>Baterías de automóvil y motocicleta</li>
+              <li>Baterías de montacargas o maquinaria pesada</li>
+              <li>Baterías industriales (plomo-ácido, AGM, gel, etc.)</li>
+              <li>Baterías de celulares y equipos electrónicos</li>
+              <li>Cualquier marca, modelo o condición</li>
+            </ul>
+            <p><strong>Recolección a domicilio:</strong> Sí. <strong>Compramos:</strong> Lotes o por unidad.</p>
+          </div>
+        </details>
 
-/* RESPONSIVE */
-@media (max-width: 1100px){
-  .container{max-width:1000px}
-}
-@media (max-width: 1024px){
-  :root{ --header-h:70px }
-  .logo{height:52px;max-height:52px}
-  .hero-copy h1{font-size:38px}
-  .grid{grid-template-columns:repeat(2,1fr)}
-  .list.cols{columns:1}
-}
-@media (max-width: 640px){
-  :root{ --header-h:64px }
-  .title{font-size:16px}
-  .logo{height:40px;max-height:40px}
-  .nav-links{
-    display:none;position:absolute;top:calc(var(--header-h) - 2px);right:16px;
-    background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px;
-    flex-direction:column;box-shadow:var(--shadow);z-index:60;
-  }
-  .burger{display:block}
-  .hero-inner{grid-template-columns:1fr}
-  .hero-copy h1{font-size:30px}
-  .contact-grid{grid-template-columns:1fr}
-}
+        <!-- Electrodomésticos -->
+        <details>
+          <summary>
+            <img src="assets/img/materiales/electrodomesticos.jpg" alt="Electrodomésticos" />
+            <span>Electrodomésticos Usados o Descompuestos</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="cols-2">
+              <li>Refrigeradores y congeladores</li>
+              <li>Hornos de microondas, licuadoras, fraperas</li>
+              <li>Lavadoras, secadoras, centros de lavado</li>
+              <li>Televisores, pantallas y estéreos</li>
+              <li>Equipos de sonido, teatro en casa</li>
+              <li>Equipos de cocina de acero inoxidable</li>
+            </ul>
+            <p class="note"><strong>Nota:</strong> No importa si están completos o descompuestos.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section id="cobertura" class="section">
+    <div class="container">
+      <h2>Cobertura Nacional</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>¿Cómo trabajamos?</h3>
+          <ol>
+            <li>Compártenos tu listado de materiales y fotos.</li>
+            <li>Agendamos la recolección sin demoras.</li>
+            <li>Retiramos en sitio con personal capacitado.</li>
+            <li>Pago <strong>inmediato</strong> en efectivo o transferencia.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <img src="assets/img/cobertura.jpg" alt="Cobertura nacional" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="section alt">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="benefits">
+        <div class="benefit"><div class="icon">⚡</div><div><h3>Rapidez</h3><p>Programación ágil y pago inmediato.</p></div></div>
+        <div class="benefit"><div class="icon">🛡️</div><div><h3>Seguridad</h3><p>Manejo responsable y trazabilidad.</p></div></div>
+        <div class="benefit"><div class="icon">🤝</div><div><h3>Atención</h3><p>Servicio para empresas y particulares.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="container contact-wrap">
+      <div>
+        <h2>Contáctanos Hoy Mismo</h2>
+        <p class="section-sub">¿Listo para reciclar con los expertos? Solicita cotización o programa recolección.</p>
+        <form id="contact-form" action="mailto:recicladorareagza@hotmail.com" method="post" enctype="text/plain">
+          <label>Nombre<input name="nombre" required placeholder="Tu nombre" /></label>
+          <label>Correo<input name="correo" type="email" required placeholder="tucorreo@dominio.com" /></label>
+          <label>Mensaje<textarea name="mensaje" required placeholder="Cuéntanos qué materiales tienes y dónde te encuentras"></textarea></label>
+          <div class="actions">
+            <button class="btn accent" type="submit">Enviar mensaje</button>
+            <a class="btn ghost" href="mailto:comprarecicladoraplata@gmail.com">Escribir a Gmail</a>
+            <a class="btn primary" target="_blank" rel="noopener" href="https://wa.me/525617897390?text=Hola%20Reagza%2C%20necesito%20recolecci%C3%B3n">WhatsApp directo</a>
+          </div>
+        </form>
+      </div>
+      <aside class="contact-card">
+        <h3>Información de Contacto</h3>
+        <ul class="contact-list">
+          <li>📍 <strong>Ubicación:</strong> Ciudad de México, México</li>
+          <li>📞 <strong>Teléfonos:</strong> <a href="tel:+525559955896">55 5995 5896</a> · <a href="tel:+525617897390">56 1789 7390</a></li>
+          <li>✉️ <strong>Correo:</strong> <a href="mailto:recicladorareagza@hotmail.com">recicladorareagza@hotmail.com</a></li>
+          <li>✉️ <strong>Gmail:</strong> <a href="mailto:comprarecicladoraplata@gmail.com">comprarecicladoraplata@gmail.com</a></li>
+          <li>🚛 <strong>Cobertura:</strong> Toda la República Mexicana</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot">
+      <div class="foot-brand"><img src="assets/img/logo.png" alt="Logo footer" /></div>
+      <small>© <span id="y"></span> Recicladora Reagza. Todos los derechos reservados.</small>
+      <div class="foot-links"><a href="robots.txt">Robots</a> · <a href="sitemap.xml">Mapa del sitio</a></div>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
