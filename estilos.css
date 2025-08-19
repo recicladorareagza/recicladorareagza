@@ -6,37 +6,40 @@
   --muted:#6b7280;
   --card:#fff;
   --shadow:0 12px 30px rgba(16,24,40,.08);
-  --header-h:72px; /* para compensar anclas con header sticky */
+  --header-h:76px; /* header un poco más alto para logo grande */
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
 html{scroll-behavior:smooth}
 a{color:var(--primary);text-decoration:none}
 img{max-width:100%;height:auto;display:block}
-.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
 
 /* ===== NAV ===== */
 header.nav{
-  position:sticky;top:0;background:rgba(255,255,255,.95);
-  backdrop-filter:saturate(180%) blur(8px);
+  position:sticky;top:0;background:rgba(255,255,255,.96);
+  backdrop-filter:saturate(180%) blur(10px);
   border-bottom:1px solid #e5e7eb;z-index:50;height:var(--header-h);
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:var(--header-h)}
-.brand{display:flex;align-items:center;gap:10px}
-.logo{height:56px;max-height:56px;width:auto;object-fit:contain} /* grande en PC */
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:64px;max-height:64px;width:auto;object-fit:contain} /* grande en PC */
 .title{font-size:18px;font-weight:800;color:var(--primary);white-space:nowrap}
 .nav-links{display:flex;gap:18px;align-items:center}
 .nav-links a{font-weight:600}
 .burger{display:none;background:none;border:1px solid #e5e7eb;padding:6px 10px;border-radius:10px}
 
 /* ===== HERO ===== */
-.hero{background:linear-gradient(180deg,#eef2ff 0%,#fff 100%);padding:42px 0 28px 0}
-/* que las anclas no queden tapadas por el header */
-.hero, .section, #inicio, #servicios, #materiales, #materiales-detalle, #quienes-somos, #cobertura, #beneficios, #contacto{
-  scroll-margin-top:calc(var(--header-h) + 12px);
+.hero{
+  background:linear-gradient(180deg,#eef2ff 0%,#fff 100%);
+  padding:46px 0 30px 0;
+}
+/* Desplazamiento de anclas corregido para que el header no tape títulos */
+#inicio, #servicios, #materiales, #materiales-detalle, #quienes-somos, #cobertura, #beneficios, #contacto{
+  scroll-margin-top:calc(var(--header-h) + 14px);
 }
 .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
-.hero-copy h1{font-size:42px;line-height:1.1;margin:0 0 10px 0;color:#0b1728}
+.hero-copy h1{font-size:44px;line-height:1.1;margin:0 0 12px 0;color:#0b1728}
 .hero-copy .accent{color:var(--accent)}
 .hero-copy p{font-size:18px;color:#374151}
 .coverage{margin-top:8px}
@@ -45,12 +48,15 @@ header.nav{
 .btn.primary{background:var(--primary);color:#fff}
 .btn.alt{background:var(--accent);color:#fff}
 .btn.ghost{background:transparent;color:var(--primary);border-color:#cfd6df}
-.hero-art img{width:100%;height:auto;max-height:380px;object-fit:cover;border-radius:12px}
+
+.hero-art img{
+  width:100%;height:auto;max-height:400px;object-fit:cover;border-radius:14px
+}
 
 /* ===== SECCIONES ===== */
-.section{padding:58px 0}
+.section{padding:60px 0}
 .section.alt{background:#fff}
-h2{font-size:28px;margin:0 0 24px 0;text-align:center;color:#0b1728}
+h2{font-size:30px;margin:0 0 24px 0;text-align:center;color:#0b1728}
 h3{color:#0b1728;margin:12px 0}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
@@ -73,24 +79,26 @@ h3{color:#0b1728;margin:12px 0}
 .form button:hover{opacity:.95}
 
 /* ===== FOOTER ===== */
-.footer{background:var(--primary);color:#fff;text-align:center;padding:20px;margin-top:24px}
+.footer{background:var(--primary);color:#fff;text-align:center;padding:22px;margin-top:26px}
 
 /* WhatsApp flotante */
 .wa-float{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;padding:12px 14px;border-radius:999px;box-shadow:var(--shadow)}
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1200px){
+  .container{max-width:1100px}
+}
 @media (max-width: 1024px){ /* Tablets */
-  :root{ --header-h:68px; }
+  :root{ --header-h:70px; }
   .logo{height:48px;max-height:48px}
-  .hero-copy h1{font-size:36px}
+  .hero-copy h1{font-size:38px}
   .grid{grid-template-columns:repeat(2,1fr)}
   .list.cols{columns:1}
 }
-
 @media (max-width: 640px){ /* Teléfonos */
   :root{ --header-h:64px; }
   .title{font-size:16px}
-  .logo{height:40px;max-height:40px} /* compacto en móvil */
+  .logo{height:38px;max-height:38px} /* compacto en móvil */
   .nav-links{
     display:none;position:absolute;top:calc(var(--header-h) - 2px);right:16px;
     background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px;
